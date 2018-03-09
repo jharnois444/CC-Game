@@ -3,13 +3,20 @@
 
 
 
-  // Here we created an on-click event that responds to button clicks of the crystal image.
-  $("#crystalRow").on("click", ".thumbnail", function() {
+$(document).ready(function(){
 
-    // Clicking the button triggers an alert message.
-    alert("You clicked a crystal!");
+    var wins=0;
+    var losses=0;
+    var targetScore=0;
+    var totalScore=0;
 
-  });
+    $(".thumbnail").on("click", function(e) {
+        e.preventDefault();
+  // Clicking the button triggers an alert message.
+      alert("You clicked a crystal!");
+
+    });
+});
 
 
 

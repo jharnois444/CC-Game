@@ -24,7 +24,7 @@ body {
 }
 
 #crystalRow {
-    float: left;
+    /* float: left; */
     margin: 0;
     min-width: 150px;
     max-width: 25%;
@@ -37,8 +37,9 @@ body {
 
 .panel-default {
     margin: 10px;
-    background-color: black;
-    /* float: left; */
+    /* background-color: black; */
+    float: left;
     height: 150px;
     width: 150px;
+    text-align: center;
 }
