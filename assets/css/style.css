@@ -1,25 +1,54 @@
+html {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
 .jumbotron {
     font-size: 75px;
-    background-color: orange;
-    border: 20px;
+    color: white;
+    background-color: black;
+    border: 5px white;
+    border-style: solid;
+    margin: 5px;
+    text-align: center;
 }
 
 #instructions {
-    color: green;
-    background-color: beige;
-    border: 20px;
+    color: white;
+    background-color: black;
+    border: 5px white;
+    border-style: solid;
+    margin: 5px;
 }
 
-#targetScore {
+/* #targetScore {
     background-color: green;
     float: left;
     font-size: 40px;
     height: 80px;
     width: 150px;
-}
+} */
 
 #winsLosses {
     background-color: lightskyblue;
     height: 80px;
     margin: 5px;
+}
+
+#crystalRow {
+    float: left;
+    margin: 0;
+    max-width: 50%;
+}
+
+#totalScore {
+    float: left;
+}
+
+.panel-heading {
+    margin: 10px;
+    background-color: black;
+
 }
