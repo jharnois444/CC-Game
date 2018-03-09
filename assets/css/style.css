@@ -1,0 +1,25 @@
+.jumbotron {
+    font-size: 75px;
+    background-color: orange;
+    border: 20px;
+}
+
+#instructions {
+    color: green;
+    background-color: beige;
+    border: 20px;
+}
+
+#targetScore {
+    background-color: green;
+    float: left;
+    font-size: 40px;
+    height: 80px;
+    width: 150px;
+}
+
+#winsLosses {
+    background-color: lightskyblue;
+    height: 80px;
+    margin: 5px;
+}
