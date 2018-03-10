@@ -1,44 +1,10 @@
-
-
-
-
-// var newGameRand = {
-//     targetScore: 0,
-//     totalScore: 0,
-//     crystalGen: function (){
-//         var crystalRand = Math.floor(Math.random() * 12) +1;
-//         return crystalRand;
-//     },
-
-//     targetGen: function (){
-//         var targetRand = Math.floor(Math.random() * 120) + 19;
-//         return targetRand;
-//     },
-
-//     reset: function (){
-//         greenCrystal = this.crystalGen();
-//         pinkCrystal = this.crystalGen();
-//         turquoiseCrystal = this.crystalGen();
-//         yellowCrystal = this.crystalGen();
-//         this.current = 0;
-//     }
-// };
-
-// newGameRand.targetScore = newGameRand.targetGen();
-// var greenCrystal = newGameRand.crystalGen();
-// var pinkCrystal = newGameRand.crystalGen();
-// var turquoiseCrystal = newGameRand.crystalGen();
-// var yellowCrystal = newGameRand.crystalGen();
-
-
-
 $(document).ready(function(){
 
 var totalScore=0;
 var wins=0;
 var losses=0;
 
-    //Generate random goal score.
+//Generate random goal score.
 var targetRand = Math.floor(Math.random() * 120) + 19;
 
 //Append random goal score html to targetScore id
@@ -66,8 +32,8 @@ function reset() {
     var pinkCrystal = Math.floor(Math.random() * 11) + 1;
     var turquoiseCrystal = Math.floor(Math.random() * 11) + 1;
     var yellowCrystal = Math.floor(Math.random() * 11) + 1;
-    var totalScore = 0;
-    // console.log(totalScore=0);
+        totalScore = 0;
+    // console.log(totalScore);
     $("#totalScore").text(totalScore);
 }
 
@@ -91,7 +57,7 @@ function lose(){
     $("#greenCrystal").on("click", function(e) {
         e.preventDefault();
   // Clicking the button triggers an alert message.
-      totalScore = totalScore + greenCrystal;
+  totalScore = totalScore + greenCrystal;
       console.log("New totalScore = " + totalScore);
       $("#totalScore").text(totalScore);
 
