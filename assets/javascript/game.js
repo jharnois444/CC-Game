@@ -25,13 +25,13 @@ $("#winsLosses").text(wins + " | " + losses);
 
 //Reset the game
 function reset() {
-    var targetRand = Math.floor(Math.random() * 120) + 19;
+     targetRand = Math.floor(Math.random() * 120) + 19;
     console.log(targetRand);
     $("#targetScore").text(targetRand);
-    var greenCrystal = Math.floor(Math.random() * 11) + 1;
-    var pinkCrystal = Math.floor(Math.random() * 11) + 1;
-    var turquoiseCrystal = Math.floor(Math.random() * 11) + 1;
-    var yellowCrystal = Math.floor(Math.random() * 11) + 1;
+        greenCrystal = Math.floor(Math.random() * 11) + 1;
+        pinkCrystal = Math.floor(Math.random() * 11) + 1;
+        turquoiseCrystal = Math.floor(Math.random() * 11) + 1;
+        yellowCrystal = Math.floor(Math.random() * 11) + 1;
         totalScore = 0;
     // console.log(totalScore);
     $("#totalScore").text(totalScore);
@@ -56,6 +56,7 @@ function lose(){
 //Jewel click functionality
     $("#greenCrystal").on("click", function(e) {
         e.preventDefault();
+
   // Clicking the button triggers an alert message.
   totalScore = totalScore + greenCrystal;
       console.log("New totalScore = " + totalScore);
